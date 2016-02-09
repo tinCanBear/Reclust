@@ -1,8 +1,9 @@
 __author__ = 'UriA12'
+insert_or_ignore = "INSERT OR IGNORE"
 
-
-    # cur.execute('''INSERT OR IGNORE INTO Artist (name)
-    #     VALUES ( ? )''', (artist, ))
+def insert(table, values):
+    cur.execute('''INSERT OR IGNORE INTO Artist (name) VALUES ( ? )''', (artist, ))
+def select(field, table, fields)
     # cur.execute('SELECT id FROM Artist WHERE name = ? ', (artist, ))
     # artist_id = cur.fetchone()[0]
     #
